@@ -1,1 +1,5 @@
-.DS_Store
+pageObjects/HomePage.class
+pageObjects/BasePage.class
+testcases/TC001_AccountRegistrationTest.class
+testBase/BaseClass.class
+pageObjects/AccountRegistrationPage.class

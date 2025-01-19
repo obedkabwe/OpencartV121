@@ -34,6 +34,9 @@ public class AccountRegistrationPage extends BasePage{
 	@FindBy(xpath="//input[@id='input-confirm']") 
 	WebElement confirm;
 	
+	@FindBy(xpath="//label[normalize-space()='Yes']") 
+	WebElement newsletter;
+	
 	@FindBy(xpath="//input[@name='agree']") 
 	WebElement agreePolicy;
 	
@@ -72,6 +75,10 @@ public class AccountRegistrationPage extends BasePage{
 		confirm.sendKeys(password);
 	}
 	
+	public void newsl() {
+		newsletter.click();
+	}
+	
 	public void setAgreeTerm() {
 		agreePolicy.click();
 	}
@@ -86,6 +93,7 @@ public class AccountRegistrationPage extends BasePage{
 			return (msgConfirmation.getText());
 		} catch (Exception e) {
 			return (e.getMessage());
+			
 		}
 		
 	}

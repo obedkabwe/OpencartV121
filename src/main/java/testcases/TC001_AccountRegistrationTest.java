@@ -38,19 +38,33 @@ public class TC001_AccountRegistrationTest extends BaseClass{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 		
-	    rg.setName(randomString());
-		rg.setLastName(randomString());
-		rg.setEmail(randomString() + "@gmail.com");
-		rg.setPhone(randomNumber());
-		String alfnum=randomAlfNum();
-		rg.setPswd(alfnum);
-		rg.setpassword(alfnum);
+//	    rg.setName(randomString());
+//		rg.setLastName(randomString());
+//		rg.setEmail(randomString() + "@gmail.com");
+//		rg.setPhone(randomNumber());
+//		String alfnum=randomAlfNum();
+//		rg.setPswd(alfnum);
+//		rg.setpassword(alfnum);
+		
+		
+		rg.setName("");
+		rg.setLastName("");
+		rg.setEmail("");
+		rg.setPhone("");
+		rg.setPswd("");
+		
+		rg.newsl();
+		
 		
 		rg.setAgreeTerm();
 		rg.submitButton();
 	}catch (Exception e) {
+		String conf=rg.getregisterMessage();
 		logger.error("Account registration test failed.",e);
 		Assert.fail("Test failed due to exception:"+ e.getMessage());
+		Assert.assertEquals( "Your accounr WORKS", conf);
+      //  Assert.assertTrue();
+
 		
 	}
 		logger.info("**************Finished TC001 Register");

@@ -27,7 +27,7 @@ public class BaseClass {
 	//static	logger= LogManager.getLogger(BaseClass.class);
 		//logger.info("Test setup started.");
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(50));
 		driver.manage().deleteAllCookies();
 		driver.get("http://localhost/openshare/");
 		driver.manage().window().maximize();
@@ -38,7 +38,7 @@ public class BaseClass {
 		public void tearDown() {
 			//logger.info("Test teardown completed .");
 			
-			driver.quit();
+			//driver.quit();
 		}
 	
 	
