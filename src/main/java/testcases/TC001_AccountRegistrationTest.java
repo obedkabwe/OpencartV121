@@ -13,7 +13,6 @@ public class TC001_AccountRegistrationTest extends BaseClass{
 
 	HomePage homePage;
 	AccountRegistrationPage rg;
-	
 
 	
 	
@@ -29,7 +28,7 @@ public class TC001_AccountRegistrationTest extends BaseClass{
 		try {
 			logger.info("Starting account registration test.");
 
-		HomePage homePage = new HomePage(driver);
+		 homePage = new HomePage(driver);
 		rg=new AccountRegistrationPage(driver);
 		
 		homePage.clickMyAccount();
@@ -38,20 +37,20 @@ public class TC001_AccountRegistrationTest extends BaseClass{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 		
-//	    rg.setName(randomString());
-//		rg.setLastName(randomString());
-//		rg.setEmail(randomString() + "@gmail.com");
-//		rg.setPhone(randomNumber());
-//		String alfnum=randomAlfNum();
-//		rg.setPswd(alfnum);
-//		rg.setpassword(alfnum);
+	    rg.setName(randomString());
+		rg.setLastName(randomString());
+		rg.setEmail(randomString() + "@gmail.com");
+		rg.setPhone(randomNumber());
+		String alfnum=randomAlfNum();
+		rg.setPswd(alfnum);
+		rg.setpassword(alfnum);
 		
-		
-		rg.setName("");
-		rg.setLastName("");
-		rg.setEmail("");
-		rg.setPhone("");
-		rg.setPswd("");
+		//Validate Registering an Account by providing only the Mandatory fields
+//		rg.setName("");
+//		rg.setLastName("");
+//		rg.setEmail("");
+//		rg.setPhone("");
+//		rg.setPswd("");
 		
 		rg.newsl();
 		

@@ -1,25 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-18T20:57:20 CST" name="Default suite" finished-at="2025-01-18T20:57:26 CST" duration-ms="6262">
+  <suite started-at="2025-01-20T23:30:17 CST" name="Master-Suite" finished-at="2025-01-20T23:30:23 CST" duration-ms="6582">
     <groups>
     </groups>
-    <test started-at="2025-01-18T20:57:20 CST" name="Default test" finished-at="2025-01-18T20:57:26 CST" duration-ms="6262">
-      <class name="testcases.TC001_AccountRegistrationTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC001_AccountRegistrationTest@5ae50ce6]" started-at="2025-01-18T20:57:20 CST" name="setup" finished-at="2025-01-18T20:57:25 CST" duration-ms="5236" status="PASS">
+    <test started-at="2025-01-20T23:30:17 CST" name="Chrome on Mac" finished-at="2025-01-20T23:30:22 CST" duration-ms="5020">
+      <class name="testcases.TC002_loginTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC002_loginTest@4b5d6a01]" started-at="2025-01-20T23:30:17 CST" name="setup" finished-at="2025-01-20T23:30:20 CST" duration-ms="3883" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mac]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_account_regis()[pri:0, instance:testcases.TC001_AccountRegistrationTest@5ae50ce6]" started-at="2025-01-18T20:57:25 CST" name="verify_account_regis" finished-at="2025-01-18T20:57:26 CST" duration-ms="998" status="PASS">
+        <test-method signature="verify_Login()[pri:0, instance:testcases.TC002_loginTest@4b5d6a01]" started-at="2025-01-20T23:30:20 CST" name="verify_Login" finished-at="2025-01-20T23:30:22 CST" duration-ms="1107" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_account_regis -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC001_AccountRegistrationTest@5ae50ce6]" started-at="2025-01-18T20:57:26 CST" name="tearDown" finished-at="2025-01-18T20:57:26 CST" duration-ms="1" status="PASS">
+        </test-method> <!-- verify_Login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC002_loginTest@4b5d6a01]" started-at="2025-01-20T23:30:22 CST" name="tearDown" finished-at="2025-01-20T23:30:22 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.TC001_AccountRegistrationTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testcases.TC002_loginTest -->
+    </test> <!-- Chrome on Mac -->
+    <test started-at="2025-01-20T23:30:17 CST" name="Firefox on Mac" finished-at="2025-01-20T23:30:23 CST" duration-ms="6582">
+      <class name="testcases.TC002_loginTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC002_loginTest@15eb5ee5]" started-at="2025-01-20T23:30:17 CST" name="setup" finished-at="2025-01-20T23:30:22 CST" duration-ms="5827" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mac]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_Login()[pri:0, instance:testcases.TC002_loginTest@15eb5ee5]" started-at="2025-01-20T23:30:22 CST" name="verify_Login" finished-at="2025-01-20T23:30:23 CST" duration-ms="737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC002_loginTest@15eb5ee5]" started-at="2025-01-20T23:30:23 CST" name="tearDown" finished-at="2025-01-20T23:30:23 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TC002_loginTest -->
+    </test> <!-- Firefox on Mac -->
+  </suite> <!-- Master-Suite -->
 </testng-results>
