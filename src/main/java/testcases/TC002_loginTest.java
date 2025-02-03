@@ -8,7 +8,7 @@ import pageObjects.LoginPage;
 import pageObjects.MyaccountPage;
 import testBase.BaseClass;
 
-public class TC002_loginTest extends BaseClass{
+public class TC002_LoginTest extends BaseClass{
 
 	HomePage homePage;
 	LoginPage loginPage;
@@ -32,7 +32,7 @@ public void verify_Login() {
 		loginPage.LoginButton();
 		
 		
-		Boolean target = myaccountPage.isLoginSuccessful();
+		Boolean target = myaccountPage.isMyAccountPageExists();
 
         Assert.assertTrue(target);
 

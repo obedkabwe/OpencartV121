@@ -1,5 +1,11 @@
+/Users/kabwetshibambe/eclipse-workspace/OpencartV121/src/main/java/testcases/TC03_LoginDDT.java
+/Users/kabwetshibambe/eclipse-workspace/OpencartV121/src/main/java/utilities/DataProviders.java
 /Users/kabwetshibambe/eclipse-workspace/OpencartV121/src/main/java/pageObjects/HomePage.java
 /Users/kabwetshibambe/eclipse-workspace/OpencartV121/src/main/java/testBase/BaseClass.java
 /Users/kabwetshibambe/eclipse-workspace/OpencartV121/src/main/java/pageObjects/BasePage.java
+/Users/kabwetshibambe/eclipse-workspace/OpencartV121/src/main/java/utilities/ExcelUtility.java
+/Users/kabwetshibambe/eclipse-workspace/OpencartV121/src/main/java/pageObjects/MyaccountPage.java
 /Users/kabwetshibambe/eclipse-workspace/OpencartV121/src/main/java/testcases/TC001_AccountRegistrationTest.java
 /Users/kabwetshibambe/eclipse-workspace/OpencartV121/src/main/java/pageObjects/AccountRegistrationPage.java
+/Users/kabwetshibambe/eclipse-workspace/OpencartV121/src/main/java/testcases/TC002_LoginTest.java
+/Users/kabwetshibambe/eclipse-workspace/OpencartV121/src/main/java/pageObjects/LoginPage.java

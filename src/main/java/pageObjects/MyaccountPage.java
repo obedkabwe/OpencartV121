@@ -12,18 +12,32 @@ public class MyaccountPage extends BasePage{
 	}
 
 	
-	@FindBy(xpath="//h2[text()='My Account']") 
-	WebElement myAccount;	
 	
-	public Boolean isLoginSuccessful() {
-		try {
-			return myAccount.isDisplayed();
-		} catch (Exception e) {
-			// TODO: handle exception
-			return false;
+	@FindBy(xpath="//h2[text()='My Account']") 
+	WebElement msgHeading;	
+	
+	
+	@FindBy(xpath="//a[@class='list-group-item'][normalize-space()='Logout']") 
+	WebElement lnkLogout;
+	
+	
+	
+	
+	 public boolean isMyAccountPageExists()   // MyAccount Page heading display status
+		{
+			try {
+				return (msgHeading.isDisplayed());
+			} catch (Exception e) {
+				return (false);
+			}
+		}
+
+		public void clickLogout() {
+			lnkLogout.click();
+
 		}
 		
-	}
+	
 	
 	
 	
