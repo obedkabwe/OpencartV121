@@ -15,7 +15,7 @@ public class TC002_LoginTest extends BaseClass{
 	MyaccountPage myaccountPage;
 
 	
-@Test	
+@Test(groups = {"Regression"})	
 public void verify_Login() {
 		try {
 		logger.info("Starting login test.");

@@ -23,7 +23,7 @@ public class BaseClass {
 	public Logger logger;
 	public Properties p;
 	
-		@BeforeClass
+		@BeforeClass(groups = {"Regression","Sanity","Master"})
 		@Parameters({"os", "browser"})
 	public void setup(@Optional String os, @Optional String br) throws IOException {
 				//logger= LogManager.getLogger(BaseClass.class.getName());
@@ -74,7 +74,7 @@ public class BaseClass {
 	
 		@AfterClass
 		public void tearDown() {
-			//logger.info("Test teardown completed .");
+			logger.info("Test teardown completed .");
 			
 			//driver.quit();
 		}

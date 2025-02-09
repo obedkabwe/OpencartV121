@@ -20,7 +20,7 @@ public class TC001_AccountRegistrationTest extends BaseClass{
 	
 	
 	
-	@Test
+	@Test(groups = {"Sanity"})
 	public void verify_account_regis() {
 		
 		logger.info("Starting account registration test.");
